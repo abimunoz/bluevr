@@ -6,7 +6,7 @@ const session = require('express-session')
 const hbs = require('express-handlebars')
 const morgan = require('morgan')
 const path = require('path')
-const app = express(
+const app = express()
 
 // CONFIG
 require('./db/config')
@@ -20,6 +20,7 @@ app.set('view engine', 'hbs')
 
 // ROUTES
 app.use('/', require('./routes/index'))
+app.use('/auth', require('./routes/auth'))
 app.use('/resource', require('./routes/resource'))
 app.use(require('./routes/error'))
 

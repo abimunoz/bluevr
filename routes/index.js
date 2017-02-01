@@ -5,4 +5,9 @@ router.get('/', (req, res, next) => {
   res.render('index', {title: 'Home'})
 })
 
+router.get('/profile', (req, res, next) => {
+  const {user} = req.session
+  return res.render('profile', {user})
+})
+
 module.exports = router

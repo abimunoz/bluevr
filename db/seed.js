@@ -1,4 +1,5 @@
 require('./config')
+// Require models
 
 Promise.all([
   // Remove model data
