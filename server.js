@@ -20,8 +20,7 @@ app.set('view engine', 'hbs')
 
 // ROUTES
 app.use('/', require('./routes/index'))
-app.use('/auth', require('./routes/auth'))
-app.use('/resource', require('./routes/resource'))
+app.use('/example', require('./routes/example'))
 app.use(require('./routes/error'))
 
 const port = process.env.PORT || 3000

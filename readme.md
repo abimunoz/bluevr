@@ -31,12 +31,6 @@ Other errors will be listed in the terminal.
 Create a `.env` for storing environmental variables. 
 They'll be automatically loaded at the top of `server.js`
 
-# Auth
+# Sessions
 
-Logging in with Github assumes a callback URL to 'http://127.0.0.1:3000/auth/callback' 
-and the following environmental variables:
-
-- GITHUB_CLIENT_ID
-- GITHUB_CLIENT_SECRET
-- BASE_URL should be set to http://localhost:3000
-
+Data can be set and get with `req.session`
