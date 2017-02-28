@@ -1,9 +1,12 @@
+// d = document.querySelector('#aframeText');
+// console.log(d);
+// d.setAttribute('text', "value: 'hi'");
+// console.log(d);
+
 $(document).ready(function(){
   $('#submit').click(function(e){
-    console.log('click');
-    const input = $('#input').val();
-    console.log(input);
     const aframeText = $('#aframeText');
-    aframeText.append(input);
+    const input = $('#input').val();
+    aframeText.attr('text', `value:${input}`)
   })
-})
+});
