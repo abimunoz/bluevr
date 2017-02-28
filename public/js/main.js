@@ -2,13 +2,14 @@
 $(document).ready(function(){
   $('#submit').click(function(e){
     const scene = $('#scene');
-    const input = $('#input').val();
+    const text = $('#text').val();
+    const geometry = $('#geometry').val();
     const component = `<a-entity
         id="aframeText"
-        geometry="primitive: plane; width: 4; height: 4"
+        geometry="primitive: ${geometry}; width: 4; height: 4"
         material="color: red"
         position="0 2 -5"
-        text="value: ${input}"></a-entity>`
+        text="value: ${text}"></a-entity>`
         scene.append(component)
   })
 });

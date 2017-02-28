@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
 
 var TextSchema = new mongoose.Schema({
-  input: String,
+  text: String,
   createdAt: { type: Date, default: Date.now }
 })
 
