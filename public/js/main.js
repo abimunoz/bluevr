@@ -4,11 +4,14 @@ $(document).ready(function(){
     const scene = $('#scene');
     const text = $('#text').val();
     const geometry = $('#geometry').val();
+    const color = $('#color').val();
+    const x = $('#x').val();
+    const y = $('#y').val();
+    const z = $('#z').val();
     const component = `<a-entity
-        id="aframeText"
         geometry="primitive: ${geometry}; width: 4; height: 4"
-        material="color: red"
-        position="0 2 -5"
+        material="color: ${color}"
+        position="${x} ${y} ${z}"
         text="value: ${text}"></a-entity>`
         scene.append(component)
   })
