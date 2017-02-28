@@ -25,6 +25,7 @@ $(document).ready(function(){
 //   })
 // });
 
+
 // APPENDS AFRAME TEXT COMPONENT TO SCENE
 // $(document).ready(function(){
 //   $('#submit').click(function(e){
