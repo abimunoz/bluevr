@@ -12,7 +12,11 @@
     geometry="primitive: {{this.geometry}}; width: 4; height: 4"
     material="color: {{this.color}}"
     position="{{this.x}} {{this.y}} {{this.z}}"
-    text="value: {{this.text}}">          <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
-</a-entity>
+    text="value: {{this.text}}">
+    <!-- <a-animation attribute="rotation"
+               dur="6000"
+               fill="forwards"
+               to="360 360 360"
+               repeat="indefinite"></a-animation> -->
   {{/each}}
 </a-scene>
