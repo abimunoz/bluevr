@@ -1,31 +1,36 @@
 const express = require('express')
 const router = express.Router()
-// const Entity = require('./models/entity')
+const Entity = require('../models/entity')
 
 // CREATE
-router.post('/create', (req, res, next) => {
-  if (err) {
-    next(err)
-  } else {
-    Entity.create({
-      text: text,
-      geometry: geometry,
-      color: color,
-      x: x,
-      y: y,
-      z: z
-    })
-    res.redirect('/');
-  }
-})
+router.post('/create', function(req, res, next) {
+  console.log(req.body);
+  const entity = {
+    text: req.body.data.text,
+    geometry: req.body.data.geometry,
+    color: req.body.data.color,
+    x: req.body.data.x,
+    y: req.body.data.y,
+    z: req.body.data.z
+  };
+
+  let data = new Entity(entity);
+  data.save();
+
+  // res.redirect('/');
+  res.json({message: 'entity created sucessfully'});
+});
 
 // READ
 router.get('/', (req, res, next) => {
-  if (err) {
-    next(err)
-  } else {
-    res.render('index', {title: 'Home'})
-  }
+  Entity.find( {}, function( err, entities ) {
+    if ( err ) {
+        console.log(err);
+    } else {
+        console.log(entities);
+        res.render('index', {entities: entities})
+    }
+  })
 })
 
 module.exports = router

@@ -1,5 +1,4 @@
 require('./config')
-// Require models
 const Entity = require('../models/entity')
 
 
