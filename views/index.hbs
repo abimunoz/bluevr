@@ -6,5 +6,12 @@
 <input id="z" placeholder="z"/>
 <button id="submit">submit</button>
 <a-scene id="scene">
-  <!-- ENTITIES APPENDED HERE -->
+<!-- for each entity -->
+  {{#each entity}}
+  <a-entity
+    geometry="primitive: {{this.geometry}}; width: 4; height: 4"
+    material="color: {{this.color}}"
+    position="{{this.x}} {{this.y}} {{this.z}}"
+    text="value: {{this.text}}"></a-entity>
+  {{/each}}
 </a-scene>

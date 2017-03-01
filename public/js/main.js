@@ -26,6 +26,7 @@ $(document).ready(function(){
       scene.append(component)
 
     $.post('/create', {data: data}, function(res){
+      window.location = '/'
       console.log(res);
     })
   })

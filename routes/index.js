@@ -23,12 +23,12 @@ router.post('/create', function(req, res, next) {
 
 // READ
 router.get('/', (req, res, next) => {
-  Entity.find( {}, function( err, entities ) {
+  Entity.find( {}, function( err, entity ) {
     if ( err ) {
         console.log(err);
     } else {
-        console.log(entities);
-        res.render('index', {entities: entities})
+        console.log(entity);
+        res.render('index', {entity: entity})
     }
   })
 })
