@@ -12,6 +12,7 @@
     geometry="primitive: {{this.geometry}}; width: 4; height: 4"
     material="color: {{this.color}}"
     position="{{this.x}} {{this.y}} {{this.z}}"
-    text="value: {{this.text}}"></a-entity>
+    text="value: {{this.text}}">          <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+</a-entity>
   {{/each}}
 </a-scene>
