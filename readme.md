@@ -10,7 +10,7 @@ This web app allows users to create shapes in a webVR environment without having
 
 
 # Installation instructions
-To all install dependencies for this project simply run
+To all install dependencies for this project run
 ```
 npm install
 ```
@@ -28,3 +28,6 @@ Create - /create
 Read - /
 Update - /id
 Delete - /delete
+
+# Trello
+https://trello.com/b/Sp1qFKey/vr-app
