@@ -1,4 +1,6 @@
-// Component to change to random color on click.
+  ///////////
+ // CLICK //
+///////////
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
     var COLORS = ['red', 'green', 'blue', 'purple'];
@@ -17,15 +19,19 @@ AFRAME.registerComponent('cursor-listener', {
   }
 });
 
+
+  ////////////
+ // UPDATE //
+////////////
 function updateEntity (id, data) {
   $.ajax({
-  url: '/' + id,
-  type: 'PUT',
-  data: data,
-  success: function(data) {
-    console.log(data);
-  }, error: function(err) {
-    console.log(err);
-  }
-});
+    url: '/' + id,
+    type: 'PUT',
+    data: data,
+    success: function(data) {
+      console.log(data);
+    }, error: function(err) {
+      console.log(err);
+    }
+  });
 }

@@ -1,3 +1,6 @@
+  ////////////
+ // DELETE //
+////////////
 $(document).ready(function(){
   $('#delete').click(function(e){
     console.log('clicked');

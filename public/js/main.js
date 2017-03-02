@@ -1,4 +1,6 @@
-// COMPONENT CREATED FROM INPUT VALUE
+  ////////////
+ // CREATE //
+////////////
 $(document).ready(function(){
   $('#submit').click(function(e){
     const scene = $('#scene');
