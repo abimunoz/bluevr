@@ -6,21 +6,33 @@ AFRAME.registerComponent('cursor-listener', {
       var randomIndex = Math.floor(Math.random() * COLORS.length);
       this.setAttribute('material', 'color', COLORS[randomIndex]);
       newColor = COLORS[randomIndex];
-      console.log('I was clicked at: ', evt.detail.intersection.point);
-      console.log('this', this.id);
-      console.log('evt', evt);
-      console.log(randomIndex);
-      console.log(COLORS[randomIndex]);
-      updateEntity(this.id);
+      // console.log('I was clicked at: ', evt.detail.intersection.point);
+      // console.log('this', this.id);
+      // console.log('evt', evt);
+      // console.log(randomIndex);
+      // console.log(COLORS[randomIndex]);
+
+
+      // var data = {
+      //   text: text,
+      //   geometry: geometry,
+      //   color: color,
+      //   x: x,
+      //   y: y,
+      //   z: z
+      // }
+
+      var data = {color: newColor}
+      updateEntity(this.id, data);
     });
   }
 });
 
-function updateEntity (id) {
+function updateEntity (id, data) {
   $.ajax({
   url: '/' + id,
   type: 'PUT',
-  data: {test: 'test'},
+  data: data,
   success: function(data) {
     console.log(data);
   }, error: function(err) {

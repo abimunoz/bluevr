@@ -35,19 +35,17 @@ router.get('/', (req, res, next) => {
 
 // UPDATE
 router.put('/:id', (req, res, next) => {
-  console.log(req.params)
   const id = req.params.id;
-  res.json('hello');
   console.log('id', id);
-  // Entity.findOneAndUpdate( {"id": id}, function( err, entity ) {
-  //   if ( err ) {
-  //       console.log(err);
-  //   } else {
-  //       console.log(entity);
-  //
-  //       res.render('index', {entity: entity})
-  //   }
-  // })
+  console.log('body', req.body)
+  Entity.findByIdAndUpdate(id, req.body, {new: true}, function( err, entity ) {
+    if ( err ) {
+        console.log('err:', err);
+    } else {
+        console.log('entity:', entity);
+        res.json('hello');
+    }
+  })
 })
 
 module.exports = router
