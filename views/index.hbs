@@ -1,11 +1,16 @@
-<input id="text" placeholder="text"/>
-<input id="geometry" placeholder="geometry"/>
-<input id="color" placeholder="color"/>
-<input id="x" placeholder="x"/>
-<input id="y" placeholder="y"/>
-<input id="z" placeholder="z"/>
-<button id="submit">submit</button>
-<button id="delete">delete all</button>
+<div>
+  <input id="text" placeholder="text"/>
+  <input id="geometry" placeholder="geometry"/>
+  <input id="color" placeholder="color"/><br />
+  <input id="x" placeholder="x"/>
+  <input id="y" placeholder="y"/>
+  <input id="z" placeholder="z"/>
+</div>
+<div>
+  <button id="create">create</button><br />
+  <button id="delete">delete all</button>
+</div>
+
 <a-scene id="scene">
 
   <!-- cursor -->
@@ -31,7 +36,6 @@
     material="color: {{this.color}}"
     position="{{this.x}} {{this.y}} {{this.z}}"
     text="value: {{this.text}}">
-
 
     <!-- <a-animation begin="click" attribute="rotation"
                dur="8000"

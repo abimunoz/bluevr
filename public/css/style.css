@@ -1,1 +1,22 @@
-/**/
+div {
+  display: inline-block;
+  margin: 10px;
+}
+
+input {
+  border: 5px solid black;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+button {
+  background: black;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+}

@@ -16,11 +16,8 @@ router.post('/create', function(req, res, next) {
     y: req.body.data.y,
     z: req.body.data.z
   };
-
   let data = new Entity(entity);
   data.save();
-
-  // res.redirect('/');
   res.json({message: 'entity created sucessfully'});
 });
 

@@ -2,7 +2,7 @@
  // CREATE //
 ////////////
 $(document).ready(function(){
-  $('#submit').click(function(e){
+  $('#create').click(function(e){
     const scene = $('#scene');
     const text = $('#text').val();
     const geometry = $('#geometry').val();
