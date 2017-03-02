@@ -7,10 +7,24 @@ AFRAME.registerComponent('cursor-listener', {
       this.setAttribute('material', 'color', COLORS[randomIndex]);
       newColor = COLORS[randomIndex];
       console.log('I was clicked at: ', evt.detail.intersection.point);
-      console.log(this);
+      console.log('this', this.id);
       console.log('evt', evt);
       console.log(randomIndex);
       console.log(COLORS[randomIndex]);
+      updateEntity(this.id);
     });
   }
 });
+
+function updateEntity (id) {
+  $.ajax({
+  url: '/' + id,
+  type: 'PUT',
+  data: {test: 'test'},
+  success: function(data) {
+    console.log(data);
+  }, error: function(err) {
+    console.log(err);
+  }
+});
+}

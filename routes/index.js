@@ -23,20 +23,22 @@ router.post('/create', function(req, res, next) {
 
 // READ
 router.get('/', (req, res, next) => {
-  Entity.find( {}, function( err, entity ) {
+  Entity.find( {}, function( err, entities ) {
     if ( err ) {
         console.log(err);
     } else {
-        console.log(entity);
-        res.render('index', {entity: entity})
+        console.log(entities);
+        res.render('index', {entities: entities})
     }
   })
 })
 
 // UPDATE
 router.put('/:id', (req, res, next) => {
+  console.log(req.params)
   const id = req.params.id;
   res.json('hello');
+  console.log('id', id);
   // Entity.findOneAndUpdate( {"id": id}, function( err, entity ) {
   //   if ( err ) {
   //       console.log(err);
