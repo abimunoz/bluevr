@@ -21,6 +21,7 @@ $(document).ready(function(){
       type: 'DELETE',
       success: function(result) {
           e.target.parentElement.remove();
+          window.location = '/'
       }
     })
 
