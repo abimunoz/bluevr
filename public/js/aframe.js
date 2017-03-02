@@ -11,17 +11,6 @@ AFRAME.registerComponent('cursor-listener', {
       // console.log('evt', evt);
       // console.log(randomIndex);
       // console.log(COLORS[randomIndex]);
-
-
-      // var data = {
-      //   text: text,
-      //   geometry: geometry,
-      //   color: color,
-      //   x: x,
-      //   y: y,
-      //   z: z
-      // }
-
       var data = {color: newColor}
       updateEntity(this.id, data);
     });

@@ -48,4 +48,16 @@ router.put('/:id', (req, res, next) => {
   })
 })
 
+// DELETE
+router.delete('/delete', (req, res, next) => {
+  Entity.remove({}, (err, story) => {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log('everything deleted');
+    }
+  res.render('index');
+  })
+})
+
 module.exports = router
