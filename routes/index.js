@@ -33,4 +33,19 @@ router.get('/', (req, res, next) => {
   })
 })
 
+// UPDATE
+router.put('/:id', (req, res, next) => {
+  const id = req.params.id;
+  res.json('hello');
+  // Entity.findOneAndUpdate( {"id": id}, function( err, entity ) {
+  //   if ( err ) {
+  //       console.log(err);
+  //   } else {
+  //       console.log(entity);
+  //
+  //       res.render('index', {entity: entity})
+  //   }
+  // })
+})
+
 module.exports = router
