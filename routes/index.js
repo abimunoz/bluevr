@@ -2,7 +2,10 @@ const express = require('express')
 const router = express.Router()
 const Entity = require('../models/entity')
 
-// CREATE
+
+  ////////////
+ // CREATE //
+////////////
 router.post('/create', function(req, res, next) {
   console.log(req.body);
   const entity = {
@@ -21,7 +24,10 @@ router.post('/create', function(req, res, next) {
   res.json({message: 'entity created sucessfully'});
 });
 
-// READ
+
+  //////////
+ // READ //
+//////////
 router.get('/', (req, res, next) => {
   Entity.find( {}, function( err, entities ) {
     if ( err ) {
@@ -31,9 +37,12 @@ router.get('/', (req, res, next) => {
         res.render('index', {entities: entities})
     }
   })
-})
+});
 
-// UPDATE
+
+  ////////////
+ // UPDATE //
+////////////
 router.put('/:id', (req, res, next) => {
   const id = req.params.id;
   console.log('id', id);
@@ -46,9 +55,12 @@ router.put('/:id', (req, res, next) => {
         res.json('hello');
     }
   })
-})
+});
 
-// DELETE
+
+  ////////////
+ // DELETE //
+////////////
 router.delete('/delete', (req, res, next) => {
   Entity.remove({}, (err, story) => {
     if(err) {
@@ -58,6 +70,6 @@ router.delete('/delete', (req, res, next) => {
     }
   res.render('index');
   })
-})
+});
 
 module.exports = router
