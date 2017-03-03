@@ -59,7 +59,7 @@ router.put('/:id', (req, res, next) => {
  // DELETE //
 ////////////
 router.delete('/delete', (req, res, next) => {
-  Entity.remove({}, (err, story) => {
+  Entity.remove({}, (err, entity) => {
     if(err) {
       console.log(err);
     } else {
