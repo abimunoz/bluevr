@@ -1,8 +1,9 @@
-# CREATING SHAPES (ENTITIES) IN WEBVR
+# blueVR
+Create shapes (entities) in webVR
 
 
 ## Overview
-This web app allows users to create shapes in a webVR environment without having to write any code
+This web app allows users to create shapes in a webVR environment without having to write any code. Instead the user inputs information regarding the geometry, color and position where the entity will be placed. Then after clicking the create button the inputed properties of the new entity will be stored in a database which also displaying in the browser.
 
 
 ## Technologies
@@ -24,10 +25,10 @@ Learn more [here](https://aframe.io/docs/0.5.0/components/cursor.html#sidebar)!
 
 
 ## Routes
-Create - /create
-Read - /
-Update - /id
-Delete - /delete
+- Create - /create
+- Read - /
+- Update - /id
+- Delete - /delete
 
 ## Trello
 https://trello.com/b/Sp1qFKey/vr-app
