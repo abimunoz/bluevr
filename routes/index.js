@@ -25,9 +25,9 @@ router.post('/create', function(req, res, next) {
   //////////
  // READ //
 //////////
-router.get('/', (req, res, next) => {
-  Entity.find( {}, function( err, entities ) {
-    if ( err ) {
+router.get('/', function(req, res, next) {
+  Entity.find( {}, function(err, entities) {
+    if (err) {
         console.log(err);
     } else {
         console.log(entities);
@@ -40,12 +40,12 @@ router.get('/', (req, res, next) => {
   ////////////
  // UPDATE //
 ////////////
-router.put('/:id', (req, res, next) => {
+router.put('/:id', function(req, res, next) {
   const id = req.params.id;
   console.log('id', id);
   console.log('body', req.body)
-  Entity.findByIdAndUpdate(id, req.body, {new: true}, function( err, entity ) {
-    if ( err ) {
+  Entity.findByIdAndUpdate(id, req.body, {new: true}, function(err, entity) {
+    if (err) {
         console.log('err:', err);
     } else {
         console.log('entity:', entity);
@@ -58,8 +58,8 @@ router.put('/:id', (req, res, next) => {
   ////////////
  // DELETE //
 ////////////
-router.delete('/delete', (req, res, next) => {
-  Entity.remove({}, (err, entity) => {
+router.delete('/delete', function(req, res, next) {
+  Entity.remove({}, function(err, entity) {
     if(err) {
       console.log(err);
     } else {
