@@ -1,21 +1,21 @@
 # CREATING SHAPES (ENTITIES) IN WEBVR
 
 
-# Overview
+## Overview
 This web app allows users to create shapes in a webVR environment without having to write any code
 
 
-# Technologies
+## Technologies
 [A-frame](https://aframe.io/) | HTML5 | CSS3 | JavaScript | jQuery | Handlebars | MongoDB | Node.js | Express
 
 
-# Installation instructions
+## Installation instructions
 To all install dependencies for this project run
 ```
 npm install
 ```
 
-# Major hurdles
+## Major hurdles
 A click, a gaze but really both.
 
 Although webVR runs in the browser, in A-frame, the cursor needs to be modified so that it can interact individual entities with the VR scene. In A-frame a click of the mouse in the browser is not a traditional click event. Instead the "click" is actually the center of the screen which is where the camera is gazing or "clicking".
@@ -23,11 +23,11 @@ Although webVR runs in the browser, in A-frame, the cursor needs to be modified 
 Learn more [here](https://aframe.io/docs/0.5.0/components/cursor.html#sidebar)!
 
 
-# Routes
+## Routes
 Create - /create
 Read - /
 Update - /id
 Delete - /delete
 
-# Trello
+## Trello
 https://trello.com/b/Sp1qFKey/vr-app
