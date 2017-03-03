@@ -26,7 +26,7 @@ router.post('/create', function(req, res, next) {
  // READ //
 //////////
 router.get('/', function(req, res, next) {
-  Entity.find( {}, function(err, entities) {
+  Entity.find({}, function(err, entities) {
     if (err) {
         console.log(err);
     } else {
