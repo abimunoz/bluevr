@@ -3,9 +3,9 @@
 ///////////
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
-    var COLORS = ['red', 'green', 'blue', 'purple'];
+    const COLORS = ['red', 'green', 'blue', 'purple'];
     this.el.addEventListener('click', function (evt) {
-      var randomIndex = Math.floor(Math.random() * COLORS.length);
+      let randomIndex = Math.floor(Math.random() * COLORS.length);
       this.setAttribute('material', 'color', COLORS[randomIndex]);
       newColor = COLORS[randomIndex];
       // console.log('I was clicked at: ', evt.detail.intersection.point);
@@ -13,7 +13,7 @@ AFRAME.registerComponent('cursor-listener', {
       // console.log('evt', evt);
       // console.log(randomIndex);
       // console.log(COLORS[randomIndex]);
-      var data = {color: newColor}
+      let data = {color: newColor}
       updateEntity(this.id, data);
     });
   }
@@ -23,7 +23,7 @@ AFRAME.registerComponent('cursor-listener', {
   ////////////
  // UPDATE //
 ////////////
-function updateEntity (id, data) {
+function updateEntity(id, data) {
   $.ajax({
     url: '/' + id,
     type: 'PUT',
