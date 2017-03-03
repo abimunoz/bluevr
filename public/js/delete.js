@@ -7,8 +7,8 @@ $(document).ready(function(){
     $.ajax({
       url: '/delete',
       type: 'DELETE',
-      success: function(result) {
-          e.target.parentElement.remove();
+      success: function(res) {
+          console.log(res)
           window.location = '/'
       }
     })
