@@ -11,15 +11,7 @@ This web app allows users to create shapes in a webVR environment without having
 
 
 ## Technologies
-- [A-frame](https://aframe.io/)
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-- Handlebars
-- MongoDB
-- Node.js
-- Express
+[A-frame](https://aframe.io/) | HTML5 | CSS3 | JavaScript | jQuery | Handlebars | MongoDB | Node.js | Express | [A-frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
 
 
 ## Wireframe
