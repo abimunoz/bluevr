@@ -11,17 +11,17 @@
 // ==============================================
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
-    const COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    var COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
     this.el.addEventListener('click', function (evt) {
-      let randomColor = Math.floor(Math.random() * COLORS.length);
+      var randomColor = Math.floor(Math.random() * COLORS.length);
       this.setAttribute('material', 'color', COLORS[randomColor]);
       // store value of randomColor
-      newColor = COLORS[randomColor];
+      var newColor = COLORS[randomColor];
       // color is a property of a predefined Mongoose Schema
       // set newColor as the new value for the key color
-      let data = {color: newColor};
+      var data = {color: newColor};
       // id is a property of a predefined Mongoose Schema
-      let id = this.id;
+      var id = this.id;
       updateEntity(id, data);
     });
   }
@@ -43,4 +43,4 @@ function updateEntity(id, data) {
       console.log(err);
     }
   });
-};
+}
