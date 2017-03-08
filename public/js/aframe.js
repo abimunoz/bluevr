@@ -1,9 +1,9 @@
 
-// The first function was taken from the A-Frame (WebVR) docs and
-// changes the color of a component (geometry) on click.
-// I modified the function and added function updateEntity
-// so that the change of color would occur both
-// on the front-end and back-end of the application.
+// The first function (CLICK) was taken from the A-Frame (WebVR)
+// docs and changes the color of a geometry on click.
+// I modified the function and added a second one (UPDATE)
+// so that the change of color would occur in both
+// the front-end and back-end of the application.
 // Comments below signal modifications that I made.
 
 // ==============================================
