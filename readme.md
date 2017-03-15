@@ -43,27 +43,25 @@ This is the model of the Mongoose Schema that stores the attributes of each enti
 ![](assets/model.png?raw=true)
 
 **Rendering**
-The geometries are then rendered with handlebars.js and by modifying the attributes of the A-Frame entity
 
+The geometries are then rendered with handlebars.js and by modifying the attributes of the A-Frame entity
 ![](assets/aframe.png?raw=true)
 
-
 **User Interface**
-First app sketch, take value from single input, save the value of the input to database in MongoDB and then render text in browser
 
+First app sketch, take value from single input, save the value of the input to database in MongoDB and then render text in browser
 ![](assets/wireframe1.png?raw=true)
 
 Second app sketch, add more inputs in order to allow user to have more control over creation
-
 ![](assets/wireframe2.png?raw=true)
 
 **User Experience**
 Third app sketch, speculative design where future improvements increase usability of the web application by allowing users to define their geometry based on buttons and not inputs
-
 ![](assets/wireframe3.png?raw=true)
 
 
 **Major hurdles**
+
 A click, a gaze, both?
 
 Although webVR runs in the browser, when interacting with A-frame with a computer, the cursor needs to be modified so that it can interact individual entities with the VR scene. In A-frame a click of the mouse in the browser is not a traditional click event. Instead the "click" is actually the center of the screen which is where the camera is gazing or "clicking".
