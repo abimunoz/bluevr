@@ -14,7 +14,7 @@ Technologies used: [A-frame](https://aframe.io/) | HTML5 | CSS3 | JavaScript | j
 * Clone or fork this repository
 
 * Make sure you have the following technologies installed on your computer:
- * [MongoDB](https://www.mongodb.com/download-center#community), [node.js](https://nodejs.org/) and [express.js](https://expressjs.com/)
+  * [MongoDB](https://www.mongodb.com/download-center#community), [node.js](https://nodejs.org/) and [express.js](https://expressjs.com/)
 
 * Run `$ npm install` to install all dependencies
 
@@ -56,6 +56,7 @@ Second app sketch, add more inputs in order to allow user to have more control o
 ![](assets/wireframe2.png?raw=true)
 
 **User Experience**
+
 Third app sketch, speculative design where future improvements increase usability of the web application by allowing users to define their geometry based on buttons and not inputs
 ![](assets/wireframe3.png?raw=true)
 
