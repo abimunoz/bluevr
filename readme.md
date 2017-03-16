@@ -9,7 +9,7 @@ This full-stack web application allows users to create shapes in a webVR environ
 ![](assets/assets2.png?raw=true)
 
 ## Installation
-Technologies used
+**Technologies used**
 
 [A-frame](https://aframe.io/) | HTML5 | CSS3 | JavaScript | jQuery | Handlebars | MongoDB | Node.js | Express | [A-frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
 
