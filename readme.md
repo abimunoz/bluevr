@@ -8,6 +8,8 @@ This full-stack web application allows users to create shapes in a webVR environ
 
 ![](assets/assets2.png?raw=true)
 
+
+
 ## INSTALLATION
 **TECHNOLOGIES USED**
 
@@ -20,7 +22,7 @@ This full-stack web application allows users to create shapes in a webVR environ
 
 * Run `$ npm install` to install all dependencies
 
-* Then to run on your local machine
+* To run locally
   * Open a new tab in your terminal and run `$ nodemon`
   * Open another tab in your terminal and simultaneously run `$ mongod`
 
