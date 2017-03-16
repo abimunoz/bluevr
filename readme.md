@@ -47,19 +47,23 @@ This is the model of the Mongoose Schema that stores the attributes of each enti
 **RENDERING**
 
 The geometries are then rendered with handlebars.js and by modifying the attributes of the A-Frame entity
+
 ![](assets/aframe.png?raw=true)
 
 **USER INTERFACE**
 
 First app sketch, take value from single input, save the value of the input to database in MongoDB and then render text in browser
+
 ![](assets/wireframe1.png?raw=true)
 
 Second app sketch, add more inputs in order to allow user to have more control over creation
+
 ![](assets/wireframe2.png?raw=true)
 
 **USER EXPERIENCE**
 
 Third app sketch, speculative design where future improvements increase usability of the web application by allowing users to define their geometry based on buttons and not inputs
+
 ![](assets/wireframe3.png?raw=true)
 
 
