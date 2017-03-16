@@ -67,6 +67,6 @@ Third app sketch, speculative design where future improvements increase usabilit
 
 A click, a gaze, both?
 
-Although webVR runs in the browser, when interacting with A-frame with a computer, the cursor needs to be modified so that it can interact individual entities with the VR scene. In A-frame a click of the mouse in the browser is not a traditional click event. Instead the "click" is actually the center of the screen which is where the camera is gazing or "clicking".
+Although WebVR runs in the browser, when interacting with A-frame with a computer, the cursor needs to be modified so that it can interact individual entities with the VR scene. In A-frame a click of the mouse in the browser is not a traditional click event. Instead the "click" is actually the center of the screen which is where the camera is gazing or "clicking".
 
 Learn more [here](https://aframe.io/docs/0.5.0/components/cursor.html#sidebar)!
