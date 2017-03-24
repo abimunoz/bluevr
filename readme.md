@@ -1,10 +1,10 @@
 # [BLUEVR](https://thawing-ridge-53961.herokuapp.com/)
-Create, store and delete shapes (entities) in webVR
+Create, store and delete shapes (entities) in WebVR
 ![](assets/assets1.png?raw=true)
 
 
 ## OVERVIEW
-This full-stack web application allows users to create shapes in a webVR environment without having to write any code. Instead of writing code, the user inputs information regarding the desired geometry, color and position of a new entity. After, the user clicks on the create button to store the entity’s information database and also render a new entity in the bowser.
+This web application allows users to create shapes in a WebVR environment without having to write any code. Instead of writing code, the user inputs information regarding the desired geometry, color and position of a new entity. After, the user clicks on the create button to store the entity’s information database and also render a new entity in the bowser.
 
 ![](assets/assets2.png?raw=true)
 
@@ -13,7 +13,7 @@ This full-stack web application allows users to create shapes in a webVR environ
 ## INSTALLATION
 **TECHNOLOGIES USED**
 
-[A-frame](https://aframe.io/) | HTML5 | CSS3 | JavaScript | jQuery | Handlebars.js | MongoDB | Node.js | Express | [A-frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
+[A-frame](https://aframe.io/) | HTML | CSS | JavaScript | jQuery | Handlebars.js | MongoDB | Node | Express | [A-frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
 
 * Clone or fork this repository
 
