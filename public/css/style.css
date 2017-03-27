@@ -13,7 +13,7 @@ div {
   margin: 10px;
 }
 
-input, select {
+input {
   border: 5px solid black;
   margin: 5px;
   text-align: center;
@@ -21,7 +21,7 @@ input, select {
   padding: 5px;
 }
 
-button {
+button, select {
   background: black;
   color: white;
   margin: 5px;
