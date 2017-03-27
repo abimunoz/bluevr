@@ -11,7 +11,7 @@
 // ==============================================
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
-    var COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+    var COLORS = ['red', 'yellow', 'green', 'blue', 'purple'];
     this.el.addEventListener('click', function (evt) {
       var randomColor = Math.floor(Math.random() * COLORS.length);
       this.setAttribute('material', 'color', COLORS[randomColor]);
