@@ -1,6 +1,7 @@
 <div id="elements">
   <div>
     <select id="geometry">
+      <option value="torusKnot">Torus Knot</option>
       <option value="box">Box</option>
       <option value="circle">Circle</option>
       <option value="cone">Cone</option>
@@ -12,19 +13,36 @@
       <option value="sphere">Sphere</option>
       <option value="tetrahedron">Tetrahedron</option>
       <option value="torus">Torus</option>
-      <option value="torusKnot">Torus Knot</option>
     </select>
 
-    <input id="text" placeholder="text"/>
-    <!-- <input id="geometry" placeholder="geometry"/> -->
-    <input id="color" placeholder="color"/><br />
-    <input id="x" placeholder="x"/>
-    <input id="y" placeholder="y"/>
-    <input id="z" placeholder="z"/>
+    <select id="color">
+      <option value="blue">Blue</option>
+      <!-- <option value="blue">Green</option>
+      <option value="red">Yellow</option>
+      <option value="red">Orange</option>
+       -->
+    </select>
+
+    <select id="x">
+      <option value="0">X: 0</option>
+      <option value="2">X: 2</option>
+      <option value="-2">X: -2</option>
+    </select>
+
+    <select id="y">
+      <option value="0">Y: 0</option>
+      <option value="2">Y: 2</option>
+      <option value="-2">Y: -2</option>
+    </select>
+
+    <select id="z">
+      <option value="-5">Z: -5</option>
+      <option value="5">Z: 5</option>
+    </select>
   </div>
   <div>
-    <button id="delete">delete all</button><br />
     <button id="create">create</button>
+    <button id="delete">delete all</button>
   </div>
 </div>
 
