@@ -39,3 +39,17 @@ button:hover {
   background: white;
   color: black;
 }
+
+#about:hover {
+  background: red;
+}
+
+#about:hover ~ #aboutContent {
+  background: red;
+}
+
+/*#aboutContent {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}*/
