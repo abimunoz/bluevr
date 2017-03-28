@@ -40,16 +40,8 @@ button:hover {
   color: black;
 }
 
-#about:hover {
-  background: red;
+button.a-enter-vr-button {
+ position: relative;
+ float: right;
+ margin-top: -75px;
 }
-
-#about:hover ~ #aboutContent {
-  background: red;
-}
-
-/*#aboutContent {
-  display: none;
-  position: absolute;
-  z-index: 2;
-}*/
