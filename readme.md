@@ -6,7 +6,7 @@ Create, store and delete shapes (entities) in WebVR
 ## OVERVIEW
 This web application allows users to create shapes in a WebVR environment without having to write any code. Instead of writing code, the user inputs information regarding the desired geometry, color and position of a new entity. After, the user clicks on the create button to store the entity’s information database and also render a new entity in the bowser.
 
-![](assets/img1.png?raw=true)
+![](assets/img2.png?raw=true)
 
 
 
@@ -31,7 +31,7 @@ This web application allows users to create shapes in a WebVR environment withou
 The interface of this project began with a single text input. The user was to type inside the input, I would then store the value of that input to a database and then render the data to the browser. I was quickly able to persist data from the text input so I challenged myself and added other inputs that would allow the user to have higher control of the geometries they were creating. Below are screenshots of geometries created with this web application.
 
 ![](assets/v1.png?raw=true)
-![](assets/img2.png?raw=true)
+![](assets/img1.png?raw=true)
 
 **USER STORIES**
 
