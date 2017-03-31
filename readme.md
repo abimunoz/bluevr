@@ -1,10 +1,11 @@
 # [BLUEVR](https://thawing-ridge-53961.herokuapp.com/)
 Create, store and delete shapes (entities) in WebVR
+
 ![](assets/v2.png?raw=true)
 
 
 ## OVERVIEW
-This web application allows users to create shapes in a WebVR environment without having to write any code. Instead of writing code, the user inputs information regarding the desired geometry, color and position of a new entity. After, the user clicks on the create button to store the entity’s information database and also render a new entity in the bowser. Below is an image of the view when the user clicks enter vr button.
+This web application allows users to create shapes in a WebVR environment without having to write any code. Instead of writing code, the user inputs information regarding the desired geometry, color and position of a new entity. After, the user clicks on the create button to store the entity’s information database and also render a new entity in the bowser. Furthermore, the geometry will change color when it interacts with a click/gaze. Below is an image of the view when the user clicks enter virtual reality button.
 
 ![](assets/img2.png?raw=true)
 
