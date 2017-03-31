@@ -13,7 +13,7 @@ This web application allows users to create shapes in a WebVR environment withou
 ## INSTALLATION
 **TECHNOLOGIES USED**
 
-[A-frame](https://aframe.io/) | HTML | CSS | JavaScript | jQuery | Handlebars.js | MongoDB | Node | Express | [A-frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
+[A-Frame](https://aframe.io/) | HTML | CSS | JavaScript | jQuery | Handlebars.js | MongoDB | Node | Express | [A-Frame cursor with visual feedback from Captain Anonymous](http://codepen.io/anon/pen/dpmpJP)
 
 * Clone or fork this repository
 
