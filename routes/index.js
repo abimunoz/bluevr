@@ -9,7 +9,6 @@ const Entity = require('../models/entity')
 router.post('/create', function(req, res, next) {
   console.log(req.body);
   const entity = {
-    text: req.body.data.text,
     geometry: req.body.data.geometry,
     color: req.body.data.color,
     x: req.body.data.x,

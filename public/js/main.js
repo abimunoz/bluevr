@@ -4,7 +4,6 @@
 $(document).ready(function(){
   $('#create').click(function(e){
     const scene = $('#scene');
-    const text = $('#text').val();
     const geometry = $('#geometry').val();
     const color = $('#color').val();
     const x = $('#x').val();
@@ -12,7 +11,6 @@ $(document).ready(function(){
     const z = $('#z').val();
 
     const data = {
-      text: text,
       geometry: geometry,
       color: color,
       x: x,
@@ -24,7 +22,7 @@ $(document).ready(function(){
       geometry="primitive: ${geometry}; width: 4; height: 4"
       material="color: ${color}"
       position="${x} ${y} ${z}"
-      text="value: ${text}"></a-entity>`
+      </a-entity>`
       scene.append(component)
 
     $.post('/create', {data: data}, function(res){
