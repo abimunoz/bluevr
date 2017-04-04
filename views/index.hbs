@@ -53,9 +53,10 @@
   </div>
 </div>
 
+<!-- A-FRAME SCENE -->
 <a-scene id="scene">
 
-  <!-- cursor -->
+  <!-- CURSOR -->
   <a-entity camera look-controls wasd-controls>
     <a-entity position="0 0 -3"
             geometry="primitive: ring; radiusOuter: 0.30;
@@ -69,7 +70,7 @@
     </a-entity>
   </a-entity>
 
-  <!--  entity -->
+  <!--  ENTITY -->
   {{#each entities}}
   <a-entity
     cursor-listener
@@ -78,7 +79,6 @@
     material="color: {{this.color}}"
     position="{{this.x}} {{this.y}} {{this.z}}"
     text="value: {{this.text}}">
-
     <!-- <a-animation begin="click" attribute="rotation"
                dur="8000"
                fill="forwards"
@@ -86,5 +86,4 @@
                repeat="indefinite"></a-animation> -->
   </a-entity>
   {{/each}}
-
 </a-scene>
